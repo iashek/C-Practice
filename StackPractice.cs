@@ -40,11 +40,35 @@ class GFG {
         Console.WriteLine(myStack.Count);
         
         // Output:
-
         // Total number of elements in the Stack are : 6
         // Element at the top is : 6th Element
         // Element at the top is : 6th Element
         // Total number of elements in the Stack are : 6
         
+        
+        // Converting the Stack into array
+        Object[] arr = myStack.ToArray();
+  
+        // Displaying the elements in array
+        foreach(Object str in arr)
+        {
+            Console.WriteLine(str);
+        }
+      
+        // Removing all elements from Stack
+        myStack.Clear();
+      
+        // Displaying the count of elements
+        // contained in the Stack after
+        // removing all the elements
+        Console.Write("Total number of elements"+
+                         " in the Stack are : ");
+  
+        Console.WriteLine(myStack.Count);
+        
+        // Output:
+        // Total number of elements in the Stack are : 0
+      
+      
     }
 }
