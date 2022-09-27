@@ -3,6 +3,14 @@ using System
 
 public class Practice
 {
+    // function which checks whether an
+    // element is even or not. Or you can
+    // say it is the specified condition
+    private static bool isEven(int i)
+    {
+        return ((i % 2) == 0);
+    }
+    
     public static void Main(string[] args)
     {
         // Creating a List of integers
@@ -66,7 +74,7 @@ public class Practice
         Console.Write("Result: ");
   
         // Will give the first occurrence of the
-        // element of firstlist that match the
+        // element of secondist that match the
         // conditions defined by predicate
         Console.WriteLine(secondlist.Find(isEven));
         
