@@ -5,16 +5,35 @@ public class Practice
 {
     public static void Main(string[] args)
     {
-        LinkedList<int> list=new LinkedList<int>();
-        for(int i=0;i<5;i++)
-          list.AddLast(i*10);
-        for(int i=5;i<10;i++)
-          list.AddFirst(i*10);
-        
-        foreach(int i in list)
-            Console.Write(i+"   ");
-        Console.WriteLine();
-        
+        // Creating a List of integers
+        // Here we are not setting
+        // Capacity explicitly
+        List<int> firstlist = new List<int>();
+  
+        // adding elements in firstlist
+        firstlist.Add(1);
+        firstlist.Add(2);
+        firstlist.Add(3);
+        firstlist.Add(4);
+  
+        // Printing the Capacity of firstlist
+        Console.WriteLine("Capacity Is: " + firstlist.Capacity);
+  
+        // Printing the Count of firstlist
+        Console.WriteLine("Count Is: " + firstlist.Count);
+  
+        // Adding some more
+        // elements in firstlist
+        firstlist.Add(5);
+        firstlist.Add(6);
+  
+        // Printing the Capacity of firstlist
+        // It will give output 8 as internally
+        // List is resized
+        Console.WriteLine("Capacity Is: " + firstlist.Capacity);
+  
+        // Printing the Count of firstlist
+        Console.WriteLine("Count Is: " + firstlist.Count);
         
     }
 }
