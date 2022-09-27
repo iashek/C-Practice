@@ -37,3 +37,11 @@ public class Practice
         
     }
 }
+
+// Output:
+
+// Capacity Is: 4
+// Count Is: 4
+// Capacity Is: 8
+// Count Is: 6
+
